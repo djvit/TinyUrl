@@ -1,0 +1,19 @@
+.center.jumbotron
+  .h2 Sign In
+  %form{ :role => 'form' }
+    .form-group
+      %label{ :for => 'user_name' } User name:
+      %br
+
+      %input.form-control.short{ :type =>'email', :id => 'user_email', :name => 'session[email]', :placeholder => 'email' }
+      %br
+      %br
+
+      %label{ :for => 'password' } Password:
+      %br
+
+      %input.form-control.short{ :type =>'password', :id => 'password', :name => 'session[password]', :placeholder => 'password' }
+      %br
+
+
+      %button.btn.btn-lg.btn-primary{ :id => 'btn_sign_in'} Sign In

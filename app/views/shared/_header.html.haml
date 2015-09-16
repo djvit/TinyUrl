@@ -1,0 +1,10 @@
+%header.navbar.navbar-fixed-top
+  .container
+
+    =link_to 'URL Shortener', '/', :id => 'logo'
+
+    %ul.nav.navbar-nav.navbar-right
+      %li= link_to "Sign Up", users_path, :class => 'lnk_noauth'
+      %li= link_to "Sign In", sessions_path, :class => 'lnk_noauth'
+      %li= link_to "Shorten URL", urls_path, :class => 'lnk_auth'
+      %li= link_to "Log Out", '#', :class => 'lnk_auth', :id => 'btn_sign_out'

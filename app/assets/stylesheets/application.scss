@@ -1,0 +1,10 @@
+/* Add bootstrap support */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* Common styles & layouts */
+@import "common";
+
+/* Add pages */
+@import "home";
+@import "urls";

@@ -1,0 +1,13 @@
+.center.jumbotron
+  .h2 Add an URL to shorten
+  %form{ :role => 'form' }
+    .form-group
+      %label{ :for => 'url' } Web address:
+      %input.form-control{ :type =>'text', :id => 'url', :name => 'url[path]', :placeholder => 'http://www.someweb.com' }
+
+      %button.btn.btn-lg.btn-primary{ :id => 'btn_add_url'} Add URL
+
+  %br
+  .h3.hidden{ :id => 'tiny_url_result' }
+    Shortened URL:
+    =link_to '', '#', :id => 'lnk_url_result', :target => '_blank'
